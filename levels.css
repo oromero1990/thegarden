@@ -1,0 +1,254 @@
+#level-1 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 columns */
+  grid-template-rows: repeat(3, auto); /* 3 rows */
+  gap: 5px; /* Space between items */
+  border: 2px solid maroon;
+  padding: 5px;
+  background-color: #f0f8ff; /* Light background color */
+}
+
+#level-1 p {
+  background-color: wheat;
+  padding: 10px;
+  text-align: center;
+  border-radius: 5px;
+  font-size: 2rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+/* Specific grid positions */
+#level-1 .peas {
+  grid-row: 1;
+  grid-column: 1;
+}
+
+#level-1 .onions {
+  grid-row: 1;
+  grid-column: 2;
+}
+
+#level-1 .tomatoes {
+  grid-row: 2;
+  grid-column: 1;
+}
+
+#level-1 .lettuce {
+  grid-row: 2;
+  grid-column: 2;
+}
+
+#level-1 .carrots {
+  grid-row: 3;
+  grid-column: 1;
+}
+#level-2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, auto);
+  gap: 5px;
+  border: 2px solid maroon;
+  padding: 5px;
+  background-color: #f0f8ff;
+}
+
+#level-2 p {
+  background-color: wheat;
+  padding: 10px;
+  text-align: center;
+  border-radius: 5px;
+  font-size: 2rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Grid placement */
+#level-2 .peas {
+  grid-column: 1 / 3; /* spans both columns */
+  grid-row: 1;
+}
+
+#level-2 .onions {
+  grid-column: 1;
+  grid-row: 2;
+}
+
+#level-2 .tomatoes {
+  grid-column: 2;
+  grid-row: 2;
+}
+
+#level-2 .lettuce {
+  grid-column: 1;
+  grid-row: 3;
+}
+
+#level-2 .carrots {
+  grid-column: 2;
+  grid-row: 3;
+}
+
+#level-3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 equal columns */
+  grid-template-rows: repeat(3, auto); /* 3 rows */
+  gap: 5px;
+  border: 2px solid maroon;
+  padding: 5px;
+  background-color: #f0f8ff;
+}
+
+#level-3 p {
+  background-color: wheat;
+  padding: 10px;
+  text-align: center;
+  border-radius: 5px;
+  font-size: 2rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Grid placement */
+#level-3 .peas {
+  grid-column: 1;
+  grid-row: 1;
+}
+
+#level-3 .onions {
+  grid-column: 2 / 4; /* spans columns 2 and 3 */
+  grid-row: 1;
+}
+
+#level-3 .tomatoes {
+  grid-column: 1 / 3; /* spans columns 1 and 2 */
+  grid-row: 2;
+}
+
+#level-3 .lettuce {
+  grid-column: 3;
+  grid-row: 2;
+}
+
+#level-3 .carrots {
+  grid-column: 1 / 4; /* spans all three columns */
+  grid-row: ;
+}
+
+#level-4 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 columns */
+  grid-template-rows: repeat(2, auto); /* 2 rows */
+  gap: 5px;
+  border: 2px solid maroon;
+  padding: 5px;
+  background-color: #f0f8ff;
+}
+
+#level-4 p {
+  background-color: wheat;
+  padding: 10px;
+  text-align: center;
+  border-radius: 5px;
+  font-size: 2rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Row 1 */
+#level-4 .peas {
+  grid-column: 1 / 3; /* spans columns 1 and 2 */
+  grid-row: 1;
+}
+
+#level-4 .onions {
+  grid-column: 3; /* column 3 */
+  grid-row: 1 / 3; /* spans both row 1 and 2 */
+}
+
+#level-4 .carrots {
+  grid-column: 4; /* column 4 */
+  grid-row: 1 / 3; /* spans both row 1 and 2 */
+}
+
+/* Row 2 */
+#level-4 .tomatoes {
+  grid-column: 1;
+  grid-row: 2;
+}
+
+#level-4 .lettuce {
+  grid-column: 2;
+  grid-row: 2;
+}
+#level-5 {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(3, auto);
+  gap: 5px;
+  border: 2px solid maroon;
+  padding: 5px;
+  background-color: #f0f8ff;
+}
+
+#level-5 p {
+  background-color: wheat;
+  padding: 10px;
+  text-align: center;
+  border-radius: 5px;
+  font-size: 2rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Carrots span entire column 1 */
+#level-5 .carrots {
+  grid-column: 1;
+  grid-row: 1 / 4; /* spans rows 1 to 3 */
+}
+
+/* Onions span two rows */
+#level-5 .onions {
+  grid-column: 3;
+  grid-row: 1 / 3;
+}
+
+/* Lettuce is top right */
+#level-5 .lettuce {
+  grid-column: 5;
+  grid-row: 1;
+}
+
+/* Peas span across columns 4 and 5 on row 2 */
+#level-5 .peas {
+  grid-column: 4 / 6;
+  grid-row: 2;
+  display: flex;
+  justify-content: center;
+}
+
+/* Tomatoes span 3 columns on row 3 */
+#level-5 .tomatoes {
+  grid-column: 2 / 5;
+  grid-row: 3;
+  display: flex;
+  justify-content: center;
+}
+#level-6 {
+  display: grid;
+  grid-template-columns: repeat(
+    6,
+    minmax(5rem, 1fr)
+  ); /* 6 columns, each at least 5rem */
+  grid-template-rows: repeat(3, 5rem); /* 3 rows, each exactly 5rem high */
+  gap: 5px;
+  padding: 5px;
+  background-color: #f0f8ff;
+  border: 2px solid maroon;
+}
+
+#level-6 p {
+  background-color: wheat;
+  font-size: 2rem;
+  text-align: center;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
